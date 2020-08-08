@@ -1,0 +1,135 @@
+
+--- NEW SESSION: 25/07/2020 10:25:57 ---
+/Cornea/Visu/VisualModel.material = Default Diffuse 1 0.74902 0.74902 0.74902 1 Ambient 1 0.2 0.2 0.2 1 Specular 0 1 1 1 1 Emissive 0 0 0 0 0 Shininess 0 45 
+
+--- NEW SESSION: 25/07/2020 10:27:12 ---
+/Cornea/Visu/VisualModel.filename = /home/alireza/sofaDirectory/CompleteEye/Obj/BakedCornea.mtl
+/Cornea/Visu/VisualModel.material = Default Diffuse 1 0.74902 0.74902 0.74902 1 Ambient 1 0.2 0.2 0.2 1 Specular 0 1 1 1 1 Emissive 0 0 0 0 0 Shininess 0 45 
+/Cornea/Visu/VisualModel.filename = 
+/Cornea/Visu/VisualModel.material = /home/alireza/sofaDirectory/CompleteEye/Obj/BakedCornea.mtl Diffuse 1 0.74902 0.74902 0.74902 1 Ambient 1 0.2 0.2 0.2 1 Specular 0 1 1 1 1 Emissive 0 0 0 0 0 Shininess 0 45 
+
+--- NEW SESSION: 26/07/2020 22:20:17 ---
+/Cornea/FEM.printLog = 1
+/Cornea/FEM.poissonRatio = 0.21
+
+--- NEW SESSION: 26/07/2020 22:26:49 ---
+/Cornea/Visu/VisualModel.material = lambert2SG Diffuse 1 0 0 0 1 Ambient 1 0 0 0 1 Specular 0 1 1 1 1 Emissive 0 0 0 0 0 Shininess 0 45 
+
+--- NEW SESSION: 26/07/2020 23:51:36 ---
+/Cornea/Visu/VisualModel.texturename = /home/alireza/sofaDirectory/EyeModel/eye_section_baked_obj/Cornea_WholeVRayDiffuseFilterMap.jpg
+/Cornea/Visu/VisualModel.material = Material Diffuse 1 0.8 0.8 0.8 1 Ambient 1 1 1 1 1 Specular 1 0.498039 0.498039 0.498039 1 Emissive 0 0 0 0 0 Shininess 1 225 
+/Cornea/Visu/VisualModel.material = Material Diffuse 1 0.8 0.8 0.8 1 Ambient 1 1 1 1 1 Specular 1 0.498039 0.498039 0.498039 1 Emissive 0 0 0 0 0 Shininess 1 225 
+
+--- NEW SESSION: 27/07/2020 00:51:45 ---
+/Cornea/Visu/VisualModel.material = Default Diffuse 1 0.74902 0.74902 0.74902 1 Ambient 1 0.2 0.2 0.2 1 Specular 0 1 1 1 1 Emissive 0 0 0 0 0 Shininess 0 45 
+/Cornea/Visu/VisualModel.material = Default Diffuse 1 0.74902 0.74902 0.74902 0.0980392 Ambient 1 0.2 0.2 0.2 1 Specular 0 1 1 1 1 Emissive 0 0 0 0 0 Shininess 0 45 
+
+--- NEW SESSION: 27/07/2020 00:53:50 ---
+/Cornea/Visu/VisualModel.material = Diffuse Diffuse 1 0.74902 0.74902 0.74902 1 Ambient 1 0.2 0.2 0.2 1 Specular 0 1 1 1 1 Emissive 0 0 0 0 0 Shininess 0 45 
+
+--- NEW SESSION: 27/07/2020 00:54:35 ---
+/Cornea/Visu/VisualModel.material = Diffuse Diffuse 1 0.74902 0.74902 0.74902 1 Ambient 1 0.2 0.2 0.2 1 Specular 0 1 1 1 1 Emissive 0 0 0 0 0 Shininess 0 45 
+
+--- NEW SESSION: 27/07/2020 00:55:31 ---
+/Cornea/Visu/VisualModel.material = Default Diffuse 1 0.74902 0.74902 0.74902 1 Ambient 1 0.2 0.2 0.2 1 Specular 0 1 1 1 1 Emissive 0 0 0 0 0 Shininess 0 45 
+
+--- NEW SESSION: 27/07/2020 00:56:30 ---
+/Cornea/Visu/VisualModel.material = Default Diffuse 1 0.74902 0.74902 0.74902 1 Ambient 1 0.2 0.2 0.2 1 Specular 0 1 1 1 1 Emissive 0 0 0 0 0 Shininess 0 45 
+
+--- NEW SESSION: 27/07/2020 01:12:16 ---
+/Cornea/computed using mass density.massDensity = 100
+
+--- NEW SESSION: 27/07/2020 01:25:40 ---
+/Cornea/Visual/VisualModel.materials = 
+/Cornea/Visual/VisualModel.material = Default Diffuse 1 0.74902 0.74902 0.74902 1 Ambient 1 0.2 0.2 0.2 1 Specular 0 1 1 1 1 Emissive 0 0 0 0 0 Shininess 0 45 
+/Cornea/Visual/VisualModel.premultipliedAlpha = 0
+/Cornea/Visual/VisualModel.writeZTransparent = 0
+/Cornea/Visual/VisualModel.alphaBlend = 0
+/Cornea/Visual/VisualModel.cullFace = 0
+/Cornea/Visual/VisualModel.lineSmooth = 0
+/Cornea/Visual/VisualModel.pointSmooth = 0
+/Cornea/Visual/VisualModel.primitiveType = DEFAULT
+/Cornea/Visual/VisualModel.blendEquation = GL_FUNC_ADD
+/Cornea/Visual/VisualModel.material = Default Diffuse 1 0.74902 0.74902 0.74902 1 Ambient 1 0.2 0.2 0.2 1 Specular 0 1 1 1 1 Emissive 0 0 0 0 0 Shininess 0 45 
+
+--- NEW SESSION: 27/07/2020 09:56:42 ---
+/Cornea/GeomAlgo.drawColorEdges = 0.4 1 0.298039 1
+/Cornea/GeomAlgo.drawColorTriangles = 0.298039 0.498039 0.8 1
+/Cornea/GeomAlgo.drawColorTetrahedra = 1 1 0 1
+
+--- NEW SESSION: 27/07/2020 11:00:59 ---
+/Ligament/Visual/VisualModel.material = Material Diffuse 1 0.8 0.8 0.8 1 Ambient 1 1 1 1 1 Specular 1 0.498039 0.498039 0.498039 1 Emissive 0 0 0 0 0 Shininess 1 324 
+
+--- NEW SESSION: 31/07/2020 22:35:44 ---
+/Cornea/Visual/VisualModel.material = Default Diffuse 1 0.74902 0.74902 0.74902 0.196078 Ambient 0 0.2 0.2 0.2 1 Specular 0 1 1 1 1 Emissive 0 0 0 0 1 Shininess 1 255 
+/Cornea/Visual/VisualModel.material = Default Diffuse 1 0.74902 0.74902 0.74902 0.196078 Ambient 0 0.2 0.2 0.2 1 Specular 0 1 1 1 1 Emissive 0 0 0 0 1 Shininess 1 255 
+/Cornea/Visual/VisualModel.lineSmooth = 1
+/Cornea/Visual/VisualModel.pointSmooth = 1
+/Cornea/Visual/VisualModel.primitiveType = DEFAULT
+/Cornea/Visual/VisualModel.sfactor = GL_ONE_MINUS_SRC_ALPHA
+
+--- NEW SESSION: 31/07/2020 23:19:33 ---
+/Cornea/Visual/VisualModel.material = CorneaMaterial Diffuse 1 0.8 0.8 0.8 1 Ambient 1 1 1 1 1 Specular 1 0.498039 0.498039 0.498039 1 Emissive 0 0 0 0 0 Shininess 1 225 
+
+--- NEW SESSION: 31/07/2020 23:26:39 ---
+/Cornea/Visual/VisualModel.materials = Default Diffuse 1 0.74902 0.74902 0.74902 1 Ambient 1 0.2 0.2 0.2 1 Specular 0 1 1 1 1 Emissive 0 0 0 0 0 Shininess 1 255 
+/Cornea/Visual/VisualModel.material = CorneaMaterial Diffuse 1 0.8 0.8 0.8 1 Ambient 1 1 1 1 1 Specular 1 0.498039 0.498039 0.498039 1 Emissive 0 0 0 0 0 Shininess 1 225 
+/Cornea/Visual/VisualModel.cullFace = 2
+
+--- NEW SESSION: 31/07/2020 23:34:14 ---
+/Lens/Visual/VisualModel.material = lambert2SG Diffuse 1 0 0 0 1 Ambient 1 1 1 1 1 Specular 1 0 0 0 1 Emissive 0 0 0 0 0 Shininess 1 0 
+/Lens/Visual/VisualModel.material = lambert2SG Diffuse 1 0 0 0 1 Ambient 1 1 1 1 1 Specular 1 0 0 0 1 Emissive 0 0 0 0 0 Shininess 1 0 
+
+--- NEW SESSION: 31/07/2020 23:44:23 ---
+/Chloroid/Visual/VisualModel.material = lambert3SG.002 Diffuse 1 0 0 0 1 Ambient 1 1 1 1 1 Specular 1 0 0 0 1 Emissive 0 0 0 0 0 Shininess 1 0 
+
+--- NEW SESSION: 01/08/2020 01:18:30 ---
+//freeMotionAnimationLoop1.listening = 1
+//freeMotionAnimationLoop1.solveVelocityConstraintFirst = 1
+//freeMotionAnimationLoop1.threadSafeVisitor = 1
+
+--- NEW SESSION: 01/08/2020 19:34:50 ---
+/Sclera/Visual/VisualModel.material = ScleraMaterial Diffuse 1 0.8 0.8 0.8 0.392157 Ambient 1 1 1 1 1 Specular 1 0.498039 0.498039 0.498039 1 Emissive 0 0 0 0 0 Shininess 1 225 
+/Sclera/Visual/VisualModel.material = ScleraMaterial Diffuse 1 0.8 0.8 0.8 0.196078 Ambient 1 1 1 1 1 Specular 1 0.498039 0.498039 0.498039 1 Emissive 0 0 0 0 0 Shininess 1 225 
+
+--- NEW SESSION: 01/08/2020 19:41:17 ---
+/Sclera/Visual/VisualModel.material = ScleraMaterial Diffuse 1 0.8 0.8 0.8 0.392157 Ambient 1 1 1 1 1 Specular 1 0.498039 0.498039 0.498039 1 Emissive 0 0 0 0 0 Shininess 1 225 
+
+--- NEW SESSION: 01/08/2020 19:48:26 ---
+/Chloroid/Visual/VisualModel.material = lambert3SG.002 Diffuse 1 0 0 0 0.392157 Ambient 1 1 1 1 1 Specular 1 0 0 0 1 Emissive 0 0 0 0 0 Shininess 1 0 
+/Chloroid/Visual/VisualModel.material = lambert3SG.002 Diffuse 1 0 0 0 1 Ambient 1 1 1 1 1 Specular 1 0 0 0 1 Emissive 0 0 0 0 0 Shininess 1 0 
+/Sclera/Visual/VisualModel.material = ScleraMaterial Diffuse 1 0.8 0.8 0.8 0.392157 Ambient 1 1 1 1 1 Specular 1 0.498039 0.498039 0.498039 1 Emissive 0 0 0 0 0 Shininess 1 225 
+
+--- NEW SESSION: 01/08/2020 13:42:21 ---
+/Sclera/Visual/VisualModel.material = Default Diffuse 1 1 1 1 1 Ambient 1 0.0980392 0.0980392 0.0980392 1 Specular 0 0.0980392 0.0980392 0.0980392 1 Emissive 0 0.0980392 0.0980392 0.0980392 1 Shininess 0 45 
+
+--- NEW SESSION: 01/08/2020 13:43:25 ---
+/Sclera/Visual/VisualModel.material = Default Diffuse 1 1 1 1 1 Ambient 1 0.0980392 0.0980392 0.0980392 1 Specular 0 0.0980392 0.0980392 0.0980392 1 Emissive 0 0.0980392 0.0980392 0.0980392 1 Shininess 0 45 
+
+--- NEW SESSION: 01/08/2020 13:56:36 ---
+/Cornea/Visual/VisualModel.materials = Default Diffuse 1 0.74902 0.74902 0.74902 1 Ambient 1 0.2 0.2 0.2 1 Specular 0 1 1 1 1 Emissive 0 0 0 0 0 Shininess 0 45 
+/Cornea/Visual/VisualModel.material = Default Diffuse 1 0.937255 0.160784 0.160784 1 Ambient 1 0.937255 0.160784 0.160784 0 Specular 1 0.937255 0.160784 0.160784 0 Emissive 1 0.937255 0.160784 0.160784 0 Shininess 1 255 
+
+--- NEW SESSION: 01/08/2020 13:59:22 ---
+/Cornea/Visual/VisualModel.materials = Default Diffuse 1 0.74902 0.74902 0.74902 0 Ambient 1 0.2 0.2 0.2 0 Specular 1 1 1 1 0 Emissive 1 0 0 0 0 Shininess 0 45 
+/Cornea/Visual/VisualModel.material = Default Diffuse 1 1 1 1 1 Ambient 1 0.0980392 0.0980392 0.0980392 1 Specular 0 0.0980392 0.0980392 0.0980392 1 Emissive 0 0.0980392 0.0980392 0.0980392 1 Shininess 0 45 
+/Cornea/Visual/VisualModel.blendTranslucency = 0
+/Cornea/Visual/VisualModel.premultipliedAlpha = 0
+/Cornea/Visual/VisualModel.writeZTransparent = 0
+/Cornea/Visual/VisualModel.alphaBlend = 1
+/Cornea/Visual/VisualModel.depthTest = 1
+/Cornea/Visual/VisualModel.cullFace = 6
+/Cornea/Visual/VisualModel.blendEquation = GL_FUNC_SUBTRACT
+
+--- NEW SESSION: 01/08/2020 23:32:12 ---
+/Cornea/Visual/VisualModel.material = Default Diffuse 1 1 1 1 1 Ambient 1 0.0980392 0.0980392 0.0980392 1 Specular 1 0.0980392 0.0980392 0.0980392 1 Emissive 0 0.0980392 0.0980392 0.0980392 1 Shininess 0 45 
+/Cornea/Visual/VisualModel.blendTranslucency = 1
+/Cornea/Visual/VisualModel.premultipliedAlpha = 0
+/Cornea/Visual/VisualModel.writeZTransparent = 0
+/Cornea/Visual/VisualModel.alphaBlend = 0
+/Cornea/Visual/VisualModel.depthTest = 1
+/Cornea/Visual/VisualModel.lineSmooth = 0
+/Cornea/Visual/VisualModel.pointSmooth = 0
+/Cornea/Visual/VisualModel.primitiveType = DEFAULT
+/Cornea/Visual/VisualModel.blendEquation = GL_FUNC_ADD
+/Cornea/Visual/VisualModel.sfactor = GL_ONE

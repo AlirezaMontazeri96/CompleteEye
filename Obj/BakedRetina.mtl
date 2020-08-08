@@ -1,0 +1,30 @@
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd retina_left_newVRayDiffuseFilterMap.jpg
+bump  -bm 0.01 retina_left_newVRayBumpNormalsMap.jpg
+Ni 1.00
+newmtl lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd retina_right_newVRayDiffuseFilterMap.jpg
+bump  -bm 0.01 retina_left_newVRayBumpNormalsMap.jpg
+Ni 1.00
+newmtl lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Arterie_LeftVRayCompleteMap.jpg
+Ni 1.00
+newmtl lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Arterie_RightVRayCompleteMap.jpg
+Ni 1.00

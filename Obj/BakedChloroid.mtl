@@ -1,0 +1,26 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl lambert2SG.002
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Bump -bm 0.100000 Chloroid_leftVRayBumpNormalsMap.jpg
+map_Kd Chloroid_leftVRayDiffuseFilterMap.jpg
+
+newmtl lambert3SG.002
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Bump -bm 0.100000 ChloroidRightVRayBumpNormalsMap.jpg
+map_Kd ChloroidRightVRayDiffuseFilterMap.jpg

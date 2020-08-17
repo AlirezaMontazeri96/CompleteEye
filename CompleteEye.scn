@@ -2,12 +2,12 @@
     <RequiredPlugin name="SofaOpenglVisual"/>
     <RequiredPlugin pluginName='SofaMiscCollision'/>
     <RequiredPlugin pluginName="CImgPlugin"/>
-    <VisualStyle displayFlags="hideBehaviorModels hideCollisionModels hideMappings hideForceFields" />
-    <BackgroundSetting color="0 0 0" />
+    <VisualStyle displayFlags="showBehaviorModels hideCollisionModels hideMappings hideForceFields" />
+    <BackgroundSetting color="0.2 0.2 0.2" />
 
-    <RequiredPlugin name="Geomagic plugin" pluginName="Geomagic" />
+    <!-- <RequiredPlugin name="Geomagic plugin" pluginName="Geomagic" />
     <GeomagicDriver name="GeomagicDevice" deviceName="Default Device" scale="1" drawDeviceFrame="1" positionBase="0 0 0" drawDevice="1" orientationBase="0 0.707 0 -0.707"  />
-    
+     -->
     <DefaultPipeline name="pipeline" verbose="0" depth="10" draw="0"/>
     <BruteForceDetection name="detection" />
     <DefaultContactManager name="response" response="FrictionContact" />
@@ -24,14 +24,14 @@
         <MechanicalObject name="dofs" src="@meshLoader" />
         <TetrahedronSetGeometryAlgorithms template="Vec3d" name="GeomAlgo" />
         <DiagonalMass  name="computed using mass density" massDensity="1000" />
-        <TetrahedralCorotationalFEMForceField template="Vec3d" name="FEM" method="large" poissonRatio="0.3" youngModulus="2080000" computeGlobalMatrix="0" />
+        <TetrahedralCorotationalFEMForceField template="Vec3d" name="FEM" method="large" poissonRatio="0.3" youngModulus="1e100" computeGlobalMatrix="0" />
         <!-- <PrecomputedConstraintCorrection recompute="true"/> -->
-
+        <!-- <FixedConstraint  name="FixedConstraint" indices="0 1 2 3 4 5 6 7 8 9 10" /> -->
         <UncoupledConstraintCorrection />
         <Node name="Visual" tags="Visual">
             <MeshObjLoader name="ObjLoader" filename="/home/alireza/sofaDirectory/CompleteEye/Obj/BakedCornea.obj"/>
             <OglModel   name="VisualModel" src="@ObjLoader" 
-                        material="Default Diffuse 1 1 1 1 0.5 Ambient 1 0.1 0.1 0.1 1 Specular 0 0.1 0.1 0.1 1 Emissive 0 0.1 0.1 0.1 1 Shininess 0 45"  
+                        material="Default Diffuse 1 1 1 1 0.3 Ambient 1 0.1 0.1 0.1 1 Specular 0 0.1 0.1 0.1 1 Emissive 0 0.1 0.1 0.1 1 Shininess 0 45"  
                         texturename="/home/alireza/sofaDirectory/CompleteEye/Obj/Cornea_WholeVRayDiffuseFilterMap.jpg"/>
             <BarycentricMapping name="visual mapping" input="@../dofs" output="@VisualModel" />
         </Node>
@@ -46,33 +46,7 @@
         </Node>
     </Node>
 
-    <!-- <Node name="Ligament" gravity="0 -9.81 0">
-        <EulerImplicitSolver name="cg_odesolver" rayleighStiffness="0.1" rayleighMass="0.1"/>
-        <CGLinearSolver name="linear solver" iterations="25" tolerance="1e-10" threshold="1e-10" />
-        <MeshGmshLoader name="meshLoader" filename="/home/alireza/sofaDirectory/CompleteEye/Stl/Ligament.msh" />
-        <TetrahedronSetTopologyContainer name="topo" src="@meshLoader" />
-        <MechanicalObject name="dofs" src="@meshLoader" translation="0 -0.4 0"/>
-        <TetrahedronSetGeometryAlgorithms template="Vec3d" name="GeomAlgo" />
-        <DiagonalMass  name="computed using mass density" massDensity="10" />
-        <TetrahedralCorotationalFEMForceField template="Vec3d" name="FEM" method="large" poissonRatio="0.3" youngModulus="2080000" computeGlobalMatrix="0" />
-
-        <Node name="Visual" tags="Visual">
-            <MeshObjLoader name="ObjLoader" filename="/home/alireza/sofaDirectory/CompleteEye/Obj/BakedLigament.obj"/>
-            <OglModel  name="VisualModel" src="@ObjLoader" translation="0 -0.4 0" texturename="/home/alireza/sofaDirectory/CompleteEye/Obj/ligamentsWholeVRayDiffuseFilterMap.jpg"/>
-            <BarycentricMapping name="visual mapping" input="@../dofs" output="@VisualModel" />
-        </Node>
-
-        <Node name="Collision" >
-            <MeshTopology name="Mesh" src="@../Visual/ObjLoader" />
-            <MechanicalObject template="Vec3d" name="CollisionObject" restScale="1" translation="0 -0.4 0" src="@../Visual/ObjLoader"/>
-            <PointCollisionModel name="Points" />
-            <LineCollisionModel name="Lines" />
-            <TriangleCollisionModel template="Vec3d" name="Triangles" />
-            <BarycentricMapping  name="MechanicalMapping" input="@../dofs" output="@CollisionObject"/>
-        </Node>
-    </Node> -->
-
-    <Node name="Lens" gravity="0 -9.81 0">
+    <!-- <Node name="Lens" gravity="0 -9.81 0">
         <EulerImplicitSolver name="cg_odesolver" rayleighStiffness="0.1" rayleighMass="0.1"/>
         <CGLinearSolver name="linear solver" iterations="25" tolerance="1e-10" threshold="1e-10" />
         <MeshGmshLoader name="meshLoader" filename="/home/alireza/sofaDirectory/CompleteEye/Stl/Lens.msh" />
@@ -97,7 +71,7 @@
             <TriangleCollisionModel template="Vec3d" name="Triangles" />
             <BarycentricMapping  name="MechanicalMapping" input="@../dofs" output="@CollisionObject"/>
         </Node>
-    </Node>
+    </Node> -->
 
     <Node name="Sclera" gravity="0 -9.81 0">
         <EulerImplicitSolver name="cg_odesolver" rayleighStiffness="0.1" rayleighMass="0.1"/>
@@ -107,8 +81,9 @@
         <MechanicalObject name="dofs" src="@meshLoader" translation="0 -1.67 0"/>
         <TetrahedronSetGeometryAlgorithms template="Vec3d" name="GeomAlgo" />
         <DiagonalMass  name="computed using mass density" massDensity="10" />
-        <TetrahedralCorotationalFEMForceField template="Vec3d" name="FEM" method="large" poissonRatio="0.3" youngModulus="2080000" computeGlobalMatrix="0" />
-
+        <TetrahedralCorotationalFEMForceField template="Vec3d" name="FEM" method="large" poissonRatio="0.3" youngModulus="1e100" computeGlobalMatrix="0" />
+        <!-- <FixedConstraint  name="FixedConstraint" indices="0 2 3 7 9 11 13 15 17 20 19 24 23 28 27 29 548 594 596 599 601 602 605 606 607 611 612 613 617 618 621 622" /> -->
+        <UncoupledConstraintCorrection />
         <Node name="Visual" tags="Visual">
             <MeshObjLoader name="ObjLoader" filename="/home/alireza/sofaDirectory/CompleteEye/Obj/BackedSclera.obj"/>
             <OglModel   name="VisualModel" src="@ObjLoader" translation="0 -1.67 0"  
@@ -126,7 +101,7 @@
         </Node>
     </Node>
 
-    <Node name="Iris" gravity="0 -9.81 0">
+    <!-- <Node name="Iris" gravity="0 -9.81 0">
         <EulerImplicitSolver name="cg_odesolver" rayleighStiffness="0.1" rayleighMass="0.1"/>
         <CGLinearSolver name="linear solver" iterations="100" tolerance="1e-10" threshold="1e-10" />
         <MeshGmshLoader name="meshLoader" filename="/home/alireza/sofaDirectory/CompleteEye/Stl/Iris.msh" />
@@ -152,7 +127,7 @@
             <TriangleCollisionModel template="Vec3d" name="Triangles" />
             <BarycentricMapping  name="MechanicalMapping" input="@../dofs" output="@CollisionObject"/>
         </Node>
-    </Node>
+    </Node> -->
 
     <!-- <Node name="Chloroid" gravity="0 -9.81 0">
         <EulerImplicitSolver name="cg_odesolver" rayleighStiffness="0.1" rayleighMass="0.1"/>
@@ -180,4 +155,35 @@
             <BarycentricMapping  name="MechanicalMapping" input="@../dofs" output="@CollisionObject"/>
         </Node>
     </Node> -->
+
+    <!-- <Node name="Ligament" gravity="0 -9.81 0">
+        <EulerImplicitSolver name="cg_odesolver" rayleighStiffness="0.1" rayleighMass="0.1"/>
+        <CGLinearSolver name="linear solver" iterations="25" tolerance="1e-10" threshold="1e-10" />
+        <MeshGmshLoader name="meshLoader" filename="/home/alireza/sofaDirectory/CompleteEye/Stl/Ligament.msh" />
+        <TetrahedronSetTopologyContainer name="topo" src="@meshLoader" />
+        <MechanicalObject name="dofs" src="@meshLoader" translation="0 -0.4 0"/>
+        <TetrahedronSetGeometryAlgorithms template="Vec3d" name="GeomAlgo" />
+        <DiagonalMass  name="computed using mass density" massDensity="10" />
+        <TetrahedralCorotationalFEMForceField template="Vec3d" name="FEM" method="large" poissonRatio="0.3" youngModulus="2080000" computeGlobalMatrix="0" />
+
+        <Node name="Visual" tags="Visual">
+            <MeshObjLoader name="ObjLoader" filename="/home/alireza/sofaDirectory/CompleteEye/Obj/BakedLigament.obj"/>
+            <OglModel  name="VisualModel" src="@ObjLoader" translation="0 -0.4 0" texturename="/home/alireza/sofaDirectory/CompleteEye/Obj/ligamentsWholeVRayDiffuseFilterMap.jpg"/>
+            <BarycentricMapping name="visual mapping" input="@../dofs" output="@VisualModel" />
+        </Node>
+
+        <Node name="Collision" >
+            <MeshTopology name="Mesh" src="@../Visual/ObjLoader" />
+            <MechanicalObject template="Vec3d" name="CollisionObject" restScale="1" translation="0 -0.4 0" src="@../Visual/ObjLoader"/>
+            <PointCollisionModel name="Points" />
+            <LineCollisionModel name="Lines" />
+            <TriangleCollisionModel template="Vec3d" name="Triangles" />
+            <BarycentricMapping  name="MechanicalMapping" input="@../dofs" output="@CollisionObject"/>
+        </Node>
+    </Node> -->
+
+    <AttachConstraint object1="@Cornea" object2="@Sclera" twoWay="true" 
+        indices1="528 529 527 526 525 524 523 522 521 520 519 518 517 516 514 515 530 500 499 501 503 502 505 504 506 508 507 509 511 510 513 512" 
+        indices2="0 2 3 7 9 11 13 15 17 20 19 24 23 28 27 29 548 594 596 599 601 602 605 606 607 611 612 613 617 618 621 622" 
+        constraintFactor="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"/>
 </Node>
